@@ -1,0 +1,25 @@
+[
+  {
+    "description": "重定向到百度",
+    "request": {
+      "uri": "/redirect"
+    },
+    "redirectTo": "http://www.baidu.com"
+  },
+  {
+    "description": "重定向到自定义的路径",
+    "request": {
+      "uri": "/redirect/path"
+    },
+    "redirectTo": "/redirect/new"
+  },
+  {
+    "description": "自定义路径",
+    "request": {
+      "uri": "/redirect/new"
+    },
+    "response": {
+      "text":"重定向到自定义的路径成功"
+    }
+  }
+]

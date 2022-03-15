@@ -1,0 +1,45 @@
+[
+  {
+    "description": "这是一个带header的post请求",
+
+    "request": {
+      "uri": "/post/withHeader",
+      "method": "post",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "queries": {
+          "name" : "xiaoxiaoxiao",
+          "age" : "28"
+      }
+    },
+    "response": {
+      "status": 200,
+      "json": {
+        "result": "success to xiaoxiaoxiao",
+        "status": "1"
+      }
+    }
+  },
+  {
+    "description":"这是一个带header的get请求",
+    "request": {
+      "uri": "/get/withHeader",
+      "method": "get",
+      "headers": {
+        "content-type": "application/json"
+      },
+      "queries": {
+        "name":"xiaoxiaohuang",
+        "age": "27"
+      }
+    },
+    "response": {
+      "status":200,
+      "json": {
+        "result": "带header的get请求成功",
+        "status": "1"
+      }
+    }
+  }
+]
